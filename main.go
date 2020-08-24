@@ -15,11 +15,11 @@ func fac(n int) int {
 
 func main() {
 
-	valueUI := os.Getenv("RECURSIVE_UI")
+	inputUI := os.Getenv("RECURSIVE_UI")
 
-	n, _ := strconv.Atoi(valueUI)
+	requestToInt, _ := strconv.Atoi(inputUI)
 
-	valueString := strconv.Itoa(fac(n))
+	responseToString := strconv.Itoa(fac(requestToInt))
 
-	fmt.Printf("result %s\n", valueString)
+	fmt.Printf("result %s\n", responseToString)
 }
